@@ -18,7 +18,7 @@ export default function TrigCharts() {
   return (
     <main className="play">
       <Helmet>
-        <title>삼각함수 그래프 관찰하기 - MathVault</title>
+        <title>삼각함수 그래프g 관찰하기 - MathVault</title>
       </Helmet>
       <div className="play-title">
         <h3>{info.title}</h3>
@@ -30,6 +30,7 @@ export default function TrigCharts() {
           type="range"
           min={-10}
           max={10}
+          value={a}
           onChange={(e) => {
             setA(Number(e.target.value));
           }}
@@ -39,6 +40,7 @@ export default function TrigCharts() {
           type="range"
           min={-10}
           max={10}
+          value={b}
           onChange={(e) => {
             setB(Number(e.target.value));
           }}

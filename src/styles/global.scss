@@ -21,7 +21,7 @@ body {
   margin: 0;
 }
 
-.global-header {
+header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
 
@@ -71,4 +71,32 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.048);
+}
+
+.global-footer-body {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  h1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  color: rgba(0, 0, 0, 0.719);
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: end;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 12px;
 }

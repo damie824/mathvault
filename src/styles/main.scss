@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-between;
   padding: 40px;
+  padding-top: 80px;
+  padding-bottom: 0;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -30,7 +32,7 @@
 .main-title-buttons {
   a {
     &:hover {
-      opacity: 80%;
+      opacity: 50%;
     }
     cursor: pointer;
     color: var(--highlight-color);
@@ -51,4 +53,38 @@
   display: flex;
   gap: 6px;
   margin-top: 30px;
+}
+
+.section-2 {
+  h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0;
+  }
+  text-align: center;
+  background-color: rgb(8, 8, 8);
+  color: rgb(255, 255, 255);
+  padding: 40px;
+  padding-top: 80px;
+  margin-top: -2px;
+}
+
+.section-2-buttons {
+  a {
+    &:hover {
+      background-color: white;
+      color: rgb(8, 8, 8);
+    }
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }

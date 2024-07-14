@@ -72,7 +72,7 @@ const TrigFunctionPlotter = ({ a = 1, b = 1 }: { a?: number; b?: number }) => {
         max: a * 1,
       },
       x: {
-        min: -180,
+        min: -360,
         max: 360,
       },
     },

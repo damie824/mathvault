@@ -26,6 +26,13 @@ export default function OnlineGeogebra() {
             throw new Error("Function not implemented.");
           }}
         />
+        <p>
+          지오지브라의 라이선스를 확인해 주세요.
+          <br />
+          <a target="_blank" href="https://www.geogebra.org/license">
+            https://www.geogebra.org/license
+          </a>
+        </p>
       </div>
     </main>
   );
