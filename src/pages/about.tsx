@@ -6,7 +6,7 @@ export default function AboutPage() {
       <h1>About MathVault</h1>
       <div className="about-contents">
         <h2>Who am I?</h2>
-        <p>대평고등학교 3학년에 재직중인 고등학생이에요!</p>
+        <p>대평고등학교 3학년에 재학중인 고등학생이에요!</p>
         <p>코딩을 좋아하고, 제 기술들로 다른 사람을 돕는 것에 재미를 느껴요.</p>
         <p>
           자세한 정보는 <a href="https://damie.works/">제 포트폴리오 사이트</a>
