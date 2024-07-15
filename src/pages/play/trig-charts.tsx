@@ -19,7 +19,7 @@ export default function TrigCharts() {
   return (
     <main className="play">
       <Helmet>
-        <title>삼각함수 그래프g 관찰하기 - MathVault</title>
+        <title>{info.title} - MathVault</title>
       </Helmet>
       <div className="play-title">
         <h3>{info.title}</h3>

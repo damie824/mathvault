@@ -21,7 +21,7 @@ export default function OnlineGeogebra() {
   return (
     <main className="play">
       <Helmet>
-        <title>미분과 적분의 관계를 그래프로 알아보기 - MathVault</title>
+        <title>{info.title} - MathVault</title>
       </Helmet>
       <div className="play-title">
         <h3>{info.title}</h3>
