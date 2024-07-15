@@ -8,7 +8,7 @@ import TangentLineChart, {
 
 export const info: playInfo = {
   title: "접선 계산기",
-  thumbnail: "/thumbnails/geogebra.png",
+  thumbnail: "/thumbnails/tangent-line-calc.png",
   description: "접선이 정확히 무엇인지 빠르게 이해시켜 드릴게요.",
   path: "tangent-line-calc",
   element: <OnlineGeogebra />,
