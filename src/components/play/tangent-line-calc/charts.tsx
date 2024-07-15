@@ -104,16 +104,16 @@ const TangentLineChart = ({
       },
     ],
   };
-
   const options = {
     responsive: true,
+    beginAtZero: false,
     plugins: {
       legend: {
         position: "top" as const,
       },
       title: {
         display: true,
-        text: "Polynomial, Derivative, and Integral",
+        text: "Tangent Line Calculator",
       },
     },
     scales: {
@@ -121,6 +121,7 @@ const TangentLineChart = ({
         beginAtZero: false,
       },
       x: {
+        beginAtZero: false,
         min: -10,
         max: 10,
       },
