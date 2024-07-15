@@ -6,8 +6,9 @@ import IrrationalNumberChart from "../../components/play/irrational-number-e/cha
 
 export const info: playInfo = {
   title: "e의 값은 어떻게 정의되었을까요?",
-  thumbnail: "/thumbnails/trig-charts.png",
-  description: "고등학교 교육과정 내에서 어떻게 .",
+  thumbnail: "/thumbnails/irrational-number-e.png",
+  description:
+    "고등학교 교육과정 내에서 어떻게 E값을 정의하는지 체험해 봅시다.",
   path: "irrational-number-e",
   element: <TrigCharts />,
 };
