@@ -9,6 +9,7 @@ export const info: playInfo = {
   description:
     "삼각함수 그래프에 어디에 어떤 값을 곱하냐에 따라 그래프가 어떻게 변하는지 관찰해 봅시다.",
   path: "trig-charts",
+  element: <TrigCharts />,
 };
 
 export default function TrigCharts() {

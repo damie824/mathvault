@@ -12,6 +12,7 @@ export const info: playInfo = {
   description:
     "함수의 그래프를 이용해 미분과 적분엔 어떤 관계가 있는지 생각해 봅시다.",
   path: "polynomial-plotter",
+  element: <PolynomialPlotter />,
 };
 
 export default function PolynomialPlotter() {

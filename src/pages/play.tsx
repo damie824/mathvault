@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet";
-import "../../styles/tools.scss";
+import "../styles/tools.scss";
 
-export default function ToolsPage() {
-  const playFiles = (require as any).context("../play", false, /\.tsx$/);
+export default function PlayPage() {
+  const playFiles = (require as any).context("./play", false, /\.tsx$/);
 
   const playInfos: playInfo[] = playFiles.keys().map((key: string) => {
     const module = playFiles(key);

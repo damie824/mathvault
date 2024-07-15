@@ -3,14 +3,21 @@ import { useState, useEffect } from "react";
 import MainPage from "./pages/main";
 import "./styles/global.scss";
 import GlobalHeader from "./components/global/header";
-import ToolsPage from "./pages/tools/tools";
 import TrigCharts from "./pages/play/trig-charts";
 import PolynomialPlotter from "./pages/play/polynomial-plotter";
 import AboutPage from "./pages/about";
 import OnlineGeogebra from "./pages/play/online-geogibra";
 import GlobalFooter from "./components/global/footer";
+import PlayPage from "./pages/play";
 
 function App() {
+  const playFiles = (require as any).context("./pages/play", false, /\.tsx$/);
+
+  const playInfos: playInfo[] = playFiles.keys().map((key: string) => {
+    const module = playFiles(key);
+    return module.info;
+  });
+
   function useDocumentWidth() {
     const [width, setWidth] = useState(window.innerWidth);
 
@@ -50,13 +57,10 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/play" element={<ToolsPage />} />
-          <Route path="/play/trig-charts" element={<TrigCharts />} />
-          <Route
-            path="/play/polynomial-plotter"
-            element={<PolynomialPlotter />}
-          />
-          <Route path="/play/geogebra" element={<OnlineGeogebra />} />
+          <Route path="/play" element={<PlayPage />} />
+          {playInfos.map((playInfo, i) => (
+            <Route path={`/play/${playInfo.path}`} element={playInfo.element} />
+          ))}
         </Routes>
       </BrowserRouter>
       <GlobalFooter />

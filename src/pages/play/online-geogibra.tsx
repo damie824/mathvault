@@ -7,6 +7,7 @@ export const info: playInfo = {
   thumbnail: "/thumbnails/geogebra.png",
   description: "지오지브라를 온라인에서 사용해 보세요.",
   path: "geogebra",
+  element: <OnlineGeogebra />,
 };
 
 export default function OnlineGeogebra() {

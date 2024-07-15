@@ -3,4 +3,5 @@ type playInfo = {
   thumbnail: string;
   description: string;
   path: string;
+  element: JSX.Element;
 };
