@@ -10,10 +10,10 @@ export const info: playInfo = {
   description:
     "고등학교 교육과정 내에서 어떻게 E값을 정의하는지 체험해 봅시다.",
   path: "irrational-number-e",
-  element: <TrigCharts />,
+  element: <IrrationalNumberE />,
 };
 
-export default function TrigCharts() {
+export default function IrrationalNumberE() {
   const [a, setA] = useState(0);
 
   return (

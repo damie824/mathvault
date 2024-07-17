@@ -11,10 +11,10 @@ export const info: playInfo = {
   thumbnail: "/thumbnails/tangent-line-calc.png",
   description: "접선이 정확히 무엇인지 빠르게 이해시켜 드릴게요.",
   path: "tangent-line-calc",
-  element: <OnlineGeogebra />,
+  element: <TangentLineCalc />,
 };
 
-export default function OnlineGeogebra() {
+export default function TangentLineCalc() {
   const [expr, setExpr] = useState("3*x^2 + 3x^1");
   const [a, setA] = useState(0);
 
