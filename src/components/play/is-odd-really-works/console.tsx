@@ -31,7 +31,24 @@ export default function OddCheckConsole({
         pickedItems.push(totalItems[randomIndex].type);
       }
 
-      const isSameFlavor = pickedItems.every((item) => item === pickedItems[0]);
+      const isMatch = () => {
+        let isMatch = true;
+        for (let item of itemTypes) {
+          let count = 0;
+          for (let pickedItem of pickedItems) {
+            if (pickedItem === item.type) {
+              count++;
+            }
+          }
+          if (count !== item.probability) {
+            isMatch = false;
+          }
+        }
+        return isMatch;
+      };
+
+      const isSameFlavor = isMatch();
+
       const newText = `Picked items: ${pickedItems.join(", ")} - ${
         isSameFlavor ? "Same number" : "Different numbers"
       }`;
